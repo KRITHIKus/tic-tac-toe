@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Setup</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+    h1{
+        color: hsl(0, 94%, 39%);
+        font-family: 'Times New Roman', Times, serif;
+       
+    }
+    ::placeholder {
+  color:hsl(0, 0%, 0%);
+  opacity: 1; 
+}
+
+
+</style>
+</head>
+<body>
+  
+    <div class="container">
+        <h1>Set Up Your Game</h1>
+        <div class="player-names">
+            <input type="text" id="player1" placeholder="Player 1 Name" required>
+            <input type="text" id="player2" placeholder="Player 2/Bot Name" required>
+        </div>
+        <div class="mode-selection">
+            <button onclick="setPlayerNames('twoPlayer')">Two Players</button>
+            <button onclick="setPlayerNames('bot')">Play with Bot</button>
+        </div>
+        <br>
+        <h1>DwarF</h1>
+    </div>
+ 
+    <script src="setup.js"></script>
+</body>
+</html>
